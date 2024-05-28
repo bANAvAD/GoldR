@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Золотой слиток 250 г</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/itc-slider.css">
+	<link rel="stylesheet" type="text/css" href="css/accordion.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<nav class="nav">
+				<p class="clock"></p>
+				<h4 class="logo">GoldeR</h4>
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="#" class="nav__link">Главная</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Описание</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Партнёрская программа</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Отзывы</a>
+					</li>
+				</ul>
+				<div class="burger" onclick="burgerClick()">
+					<div class="burger__line burger__line1"></div>
+					<div class="burger__line burger__line2"></div>
+					<div class="burger__line burger__line3"></div>
+				</div>
+			</nav>
+			<button class="btn_menu" id="btn_menu">Меню</button>
+			<div class="header__menu" id="menu">
+				<ul class="menu__list">
+					<li class="menu__item">Золото 50гм</li>
+					<li class="menu__item">Золото 100гм</li>
+					<li class="menu__item">Золото 250гм</li>
+					<li class="menu__item">Золото 300гм</li>
+					<li class="menu__item">
+						<div class="theme">
+							<h4 class="theme__title">Тема</h1>
+							<ul class="theme__list">
+								<li class="theme__item">
+									<div class="theme__light" onclick="choiceLight()"></div>
+								</li>
+								<li class="theme__item">
+									<div class="theme__dark" onclick="choiceDark()"></div>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	</header>
+	<main class="main">
+		<section class="shop">
+			<div class="container">
+			<h1 class="shop__title">Золотой слиток 250 г</h1>
+			<div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="3000">
+				<div class="itc-slider-wrapper">
+					<div class="itc-slider-items">
+						<div class="itc-slider-item">
+							<img src="img/gold.jpeg" class="shop__img">	
+						</div>
+						<div class="itc-slider-item">
+							<img src="img/Goldbar.jpeg" class="shop__img">	
+						</div>
+						<div class="itc-slider-item">
+							<img src="img/heart.jpeg" class="shop__img">	
+						</div>
+						<div class="itc-slider-item">
+							<img src="img/-.-.png" class="shop__img">	
+						</div>
+					</div>
+				</div>
+				<button class="itc-slider-btn itc-slider-btn-prev"></button>
+  				<button class="itc-slider-btn itc-slider-btn-next"></button>
+			</div>
+
+<div class="accordion" id="accordion-1">
+	<div class="accordion__item">
+		<h2 class="accordion__header">Описание</h2>
+		<div class="accordion__body">
+			<p class="accordion__text">Сли́ток или чу́шка — брусок металла. Слитки могут обладать разной массой, формой и категорией. При этом термин слиток чаще всего используется применительно к цветным и драгоценным металлам, тогда как термин чушка — к чёрным металлам.</p>
+		</div>
+	</div>
+	<div class="accordion__item">
+		<h2 class="accordion__header">Цена</h2>
+		<div class="accordion__body">
+			<p class="shop__price" >1 519 570 ₽</p>
+			<button class="shop__btn" id="btn" onclick="buy()">Купить</button>
+		</div>
+	</div>
+</div>
+			
+			
+			</div>
+		</section>
+		<section class="maps">
+			<div class="container">
+				<h2 class="banks">Банки:</h2>
+				<div class="google">
+					<h3 class="google__map">Google Карта</h3>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4950.765771043203!2d39.241529!3d51.6528258!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413b2e4aaea29d8b%3A0x7e1eaa583dcda81a!2z0KDQvtGB0YHQtdC70YzRhdC-0LfQsdCw0L3Qug!5e0!3m2!1sru!2sru!4v1710266560693!5m2!1sru!2sru" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div class="yandex">
+					<h3 class="yandex__map">Yandex Карта</h3>
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af0d13cd4f48081739e506162e2ae5792eda69b9a97d4ae4b15de7f17f312a8f2&amp;source=constructor" width="100%" height="470" frameborder="0"></iframe>
+				</div>
+			</div>
+		</section>
+		<section class="time">
+			<div class="container">
+				<p class="clock">
+					
+				</p>
+			</div>
+		</section>
+		<section class="video">
+			<video id="myVideo" autoplay muted loop>
+				<source src="videos/video1.mp4" type="video/mp4">
+				<source src="videos/video2.mp4" type="video/mp4">
+				<source src="videos/video3.mp4" type="video/mp4">
+			</video>
+			<div class="video__content">
+				<div class="container">
+					<h1 class="video__title">Обзор</h1>
+					<p class="video__text">Только лучшее и оригинал</p>
+					<button class="video__btn" id="play" onclick="play()">Pause</button>
+					<button class="video__btn" id="mute" onclick="mute()">Unmute</button>
+					<button class="video__btn" id="next" onclick="next()">Next</button>
+					<button class="video__btn" id="previous" onclick="previous()">Previous</button>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<h3 class="footer__title">Вадим Львов или Иерусалим Смагин</h3>
+			<p class="footer__text">
+				&copy; 2024  "Все права защищены и золото я не дам "
+			</p>
+		</div>
+	</footer>
+	<script src="scripts/script.js"></script>
+	<script src="scripts/itc-slider.js"></script>
+	<script src="scripts/menu.js"></script>
+	<script src="scripts/accordion.js"></script>
+	<script src="scripts/theme.js"></script>
+	<script src="scripts/burger.js"></script>
+	<script src="scripts/time.js"></script>
+	<script src="scripts/video.js"></script>
+</body>
+</body>
+</html>
